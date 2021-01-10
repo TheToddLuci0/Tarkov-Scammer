@@ -10,5 +10,7 @@ automate buying and selling, don't blame me if Tarkov bans you :)
 ## Running
 First, get an API key from Tarkov-Market (note, a paid Tarkov-Market account
 is required). Then, pass that as the only argument to the function `scam.py`.
+You can also put the api key into a file called `.secret`, and the program
+will automatically use that key.
 
 For example, `pyhton3 scam.py YOUR_API_KEY_HERE`.

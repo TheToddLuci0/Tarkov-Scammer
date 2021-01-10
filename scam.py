@@ -13,5 +13,10 @@ def get_scams(api_key):
 
 
 if __name__=='__main__':
-    get_scams(sys.argv[1])
+    try: 
+        with open('.secret', 'r') as f:
+            secret = f.read().strip()
+    except IOException:
+        secret = sys.argv[1]
+    get_scams(secret)
         
